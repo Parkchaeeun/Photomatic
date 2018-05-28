@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="com.google.sample.cloudvision.HomeActivity">
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/home2"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="20sp"
+        android:text=""
+        android:id="@+id/textUser"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="20sp"
+        android:text="어떤 작업을 하시겠어요?"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="앨범 보기"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/btnSelectViewAlbum"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center"
+        android:layout_width="310dp"
+        android:textColor="#ffffff"
+        android:layout_height="60dp" />
+
+    <Button
+        android:text="사진 불러오기"
+        android:background="@drawable/buttonshape2"
+        android:id="@+id/btnBringPic"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="310dp"
+        android:textColor="#ffffff"
+        android:layout_height="60dp" />
+
+    <Button
+        android:text="폴더 추가"
+        android:background="@drawable/buttonshape4"
+        android:id="@+id/btnAddFolder"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="310dp"
+        android:textColor="#ffffff"
+        android:layout_height="60dp" />
+
+</LinearLayout>

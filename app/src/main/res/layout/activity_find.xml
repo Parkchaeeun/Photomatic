@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.google.sample.cloudvision.FindActivity">
+
+    <TextView
+        android:layout_marginTop="115dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#4a4a4a"
+        android:text="비밀번호를 잃어버리셨어요?"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"
+        android:textColor="#4a4a4a"
+        android:text="가입시 등록한 메일로 임시비밀번호를 발급해드리겠습니다."
+        />
+
+    <EditText
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="5dip"
+        android:layout_marginTop="60dp"
+        android:id="@+id/findEmail"
+        android:hint="이메일 주소"
+        android:textSize="15sp"
+        android:layout_width="280dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        android:textColor="#ff3a5e"
+        android:layout_marginLeft="90dp"
+        tools:text="입력한 이메일을 찾을 수가 없습니다."
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/buttonshape"
+        android:text="메일 발송"
+        android:id="@+id/btnFind"/>
+
+</LinearLayout>

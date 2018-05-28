@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.sample.cloudvision.Main3Activity">
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/btnSelect1"
+        android:text="폴더 추가"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/btnSelect2"
+        android:text="사진 분류"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+</LinearLayout>

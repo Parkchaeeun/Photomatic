@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/finalLinear"
+    tools:context="com.google.sample.cloudvision.CreateActivity">
+
+    <ImageView
+        android:layout_gravity="left"
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:text="사진을 분류할 폴더를 선택하세요."/>
+
+    <LinearLayout
+        android:layout_marginTop="400dp"
+        android:id="@+id/linear"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonshape"
+            android:id="@+id/btn_addFolder_animal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동물"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonshape2"
+            android:id="@+id/btn_addFolder_landscape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="풍경"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonshape3"
+            android:id="@+id/btn_addFolder_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인물"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonshape4"
+            android:id="@+id/btn_addFolder_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="문자"/>
+    </LinearLayout>
+</LinearLayout>

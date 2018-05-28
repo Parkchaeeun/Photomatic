@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.sample.cloudvision.SelectFolderActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:drawableRight="@drawable/arrow"
+            android:paddingLeft="20dp"
+            android:id="@+id/btnAnimal"
+            android:text="동물"
+            android:background="@drawable/buttonshape"
+            android:drawableLeft="@drawable/animal_btn"
+            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.04"
+            android:textSize="25dp"
+            />
+
+        <Button
+            android:paddingLeft="20dp"
+            android:drawableRight="@drawable/arrow"
+            android:id="@+id/btnLandscape"
+            android:text="풍경"
+            android:background="@drawable/buttonshape2"
+            android:drawableLeft="@drawable/landscape"
+            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.04"
+            android:textSize="25dp"
+            />
+
+        <Button
+            android:paddingLeft="20dp"
+            android:drawableRight="@drawable/arrow"
+            android:id="@+id/btnProfile"
+            android:text="인물"
+            android:background="@drawable/buttonshape3"
+            android:drawableLeft="@drawable/profile_btn"
+            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.04"
+            android:textSize="25dp"
+            />
+
+        <Button
+            android:paddingLeft="20dp"
+            android:drawableRight="@drawable/arrow"
+            android:id="@+id/btnWord"
+            android:text="문자"
+            android:background="@drawable/buttonshape4"
+            android:drawableLeft="@drawable/word"
+            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.04"
+            android:textSize="25dp"
+            />
+
+        <Button
+            android:paddingLeft="20dp"
+            android:drawableRight="@drawable/arrow"
+            android:id="@+id/btnFood"
+            android:text="음식"
+            android:background="@drawable/buttonshape5"
+            android:drawableLeft="@drawable/food_btn"
+            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.04"
+            android:textSize="25dp"
+            />
+
+        <Button
+            android:paddingLeft="20dp"
+            android:drawableRight="@drawable/arrow"
+            android:id="@+id/btnPicture"
+            android:text="그림"
+            android:background="@drawable/buttonshape6"
+            android:drawableLeft="@drawable/picture_btn"
+            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.04"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="2"
+    tools:context="com.google.sample.cloudvision.SelectActivity">
+
+    <Button
+        android:id="@+id/btn_animal"
+        android:paddingTop="20dp"
+        android:text="동물"
+        android:background="@drawable/buttonshape"
+        android:drawableTop="@drawable/animal_btn"
+        android:layout_height="355dp"
+        android:layout_width="206dp"
+        android:textColor="#ffffff"
+        android:letterSpacing="-0.04"
+        android:textSize="25dp"
+        />
+
+    <Button
+        android:paddingTop="20dp"
+        android:id="@+id/btn_landscape"
+        android:text="풍경"
+        android:background="@drawable/buttonshape2"
+        android:drawableTop="@drawable/landscape"
+        android:layout_height="355dp"
+        android:layout_width="206dp"
+        android:textColor="#ffffff"
+        android:letterSpacing="-0.04"
+        android:textSize="25dp"
+        />
+
+    <Button
+        android:paddingTop="20dp"
+        android:id="@+id/btn_profile"
+        android:text="인물"
+        android:background="@drawable/buttonshape3"
+        android:drawableTop="@drawable/profile_btn"
+        android:layout_height="355dp"
+        android:layout_width="206dp"
+        android:textColor="#ffffff"
+        android:letterSpacing="-0.04"
+        android:textSize="25dp"
+        />
+
+    <Button
+        android:paddingTop="20dp"
+        android:id="@+id/btn_word"
+        android:text="문자"
+        android:background="@drawable/buttonshape4"
+        android:drawableTop="@drawable/word"
+        android:layout_height="355dp"
+        android:layout_width="206dp"
+        android:textColor="#ffffff"
+        android:letterSpacing="-0.04"
+        android:textSize="25dp"
+        />
+</GridLayout>
