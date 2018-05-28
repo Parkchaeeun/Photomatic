@@ -106,7 +106,7 @@ public class HomeActivity extends AppCompatActivity {
                     cookie = cookieTemp;  //쿠키 불러오기
                 }
 
-                
+
 
                 //입력 스트림 열기
                 InputStream inputStream=con.getInputStream();
