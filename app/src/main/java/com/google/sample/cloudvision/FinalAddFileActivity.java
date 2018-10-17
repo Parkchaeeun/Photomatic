@@ -275,7 +275,7 @@ public class FinalAddFileActivity extends AppCompatActivity {
                         FileInputStream fileInputStream = new FileInputStream(sourceFile1);
                         //String sendline="\r\n--"+binary+"\r\n";
 
-                        String serverURL = "http://52.199.119.109/pm_site/album/app_upload_test.php";
+                        String serverURL = "http://";
                         //  String postParameters = "email=" + URLEncoder.encode(email) + "&fname=" + URLEncoder.encode(fname) + "&cate=" + URLEncoder.encode(cate);
 
                         URL url = new URL(serverURL);
@@ -368,7 +368,7 @@ public class FinalAddFileActivity extends AppCompatActivity {
                         FileInputStream fileInputStream = new FileInputStream(sourceFile2);
                         //String sendline="\r\n--"+binary+"\r\n";
 
-                        String serverURL = "http://52.199.119.109/pm_site/album/app_upload_test.php";
+                        String serverURL = "";
                         //  String postParameters = "email=" + URLEncoder.encode(email) + "&fname=" + URLEncoder.encode(fname) + "&cate=" + URLEncoder.encode(cate);
 
                         URL url = new URL(serverURL);
@@ -461,7 +461,7 @@ public class FinalAddFileActivity extends AppCompatActivity {
                         FileInputStream fileInputStream = new FileInputStream(sourceFile3);
                         //String sendline="\r\n--"+binary+"\r\n";
 
-                        String serverURL = "http://52.199.119.109/pm_site/album/app_upload_test.php";
+                        String serverURL = "h";
                         //  String postParameters = "email=" + URLEncoder.encode(email) + "&fname=" + URLEncoder.encode(fname) + "&cate=" + URLEncoder.encode(cate);
 
                         URL url = new URL(serverURL);
@@ -554,7 +554,7 @@ public class FinalAddFileActivity extends AppCompatActivity {
                         FileInputStream fileInputStream = new FileInputStream(sourceFile4);
                         //String sendline="\r\n--"+binary+"\r\n";
 
-                        String serverURL = "http://52.199.119.109/pm_site/album/app_upload_test.php";
+                        String serverURL = "hp";
                         //  String postParameters = "email=" + URLEncoder.encode(email) + "&fname=" + URLEncoder.encode(fname) + "&cate=" + URLEncoder.encode(cate);
 
                         URL url = new URL(serverURL);
@@ -647,7 +647,7 @@ public class FinalAddFileActivity extends AppCompatActivity {
                         FileInputStream fileInputStream = new FileInputStream(sourceFile5);
                         //String sendline="\r\n--"+binary+"\r\n";
 
-                        String serverURL = "http://52.199.119.109/pm_site/album/app_upload_test.php";
+                        String serverURL = "";
                         //  String postParameters = "email=" + URLEncoder.encode(email) + "&fname=" + URLEncoder.encode(fname) + "&cate=" + URLEncoder.encode(cate);
 
                         URL url = new URL(serverURL);
@@ -740,7 +740,7 @@ public class FinalAddFileActivity extends AppCompatActivity {
                         FileInputStream fileInputStream = new FileInputStream(sourceFile6);
                         //String sendline="\r\n--"+binary+"\r\n";
 
-                        String serverURL = "http://52.199.119.109/pm_site/album/app_upload_test.php";
+                        String serverURL = "hphp";
                         //  String postParameters = "email=" + URLEncoder.encode(email) + "&fname=" + URLEncoder.encode(fname) + "&cate=" + URLEncoder.encode(cate);
 
                         URL url = new URL(serverURL);
