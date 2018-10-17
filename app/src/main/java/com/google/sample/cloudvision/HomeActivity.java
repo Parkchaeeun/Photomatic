@@ -186,7 +186,7 @@ public class HomeActivity extends AppCompatActivity {
 
             String email=(String)params[0];
             try{
-                String serverURL = "http://52.199.119.109/pm_site/album/app_name.php";
+                String serverURL = "http://5";
                 String postParameters = "email=" + URLEncoder.encode(email);
                 URL url = new URL(serverURL);
                 HttpURLConnection httpURLConnection=(HttpURLConnection)url.openConnection();
