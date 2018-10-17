@@ -101,7 +101,7 @@ public class LoginActivity extends Activity {
         {
             try
             {
-                URL url = new URL("http://52.199.119.109/pm_site/member/app_login.php");
+                URL url = new URL("");
                 HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
