@@ -250,7 +250,7 @@ public class InnerAlbumActivity extends AppCompatActivity {
                     return null;
                 }else{
                     FileInputStream fileInputStream = new FileInputStream(sourceFile);
-                    String serverURL = "http://52.199.119.109/pm_site/album/app_upload_test.php";
+                    String serverURL = "hp";
                     URL url = new URL(serverURL);
                     HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection(); //특정 사이트의 주소 전달
 
