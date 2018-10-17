@@ -135,7 +135,7 @@ public class JoinActivity extends Activity {
             String email = (String)params[1];
             String pw = (String)params[2];
 
-            String serverURL = "http://52.199.119.109/pm_site/member/app_MemberDao.php ";
+            String serverURL = "ho.php ";
             String postParameters = "name=" + name + "&email=" + email + "&pw=" + pw;
 
             try {
