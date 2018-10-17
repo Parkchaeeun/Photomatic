@@ -163,7 +163,7 @@ public class PopupActivity extends AppCompatActivity {
         String group = (String)params[2];
 
         try{
-            String serverURL = "http://52.199.119.109/pm_site/album/app_add_folder.php";
+            String serverURL = "http:/er.php";
             String postParameters = "email=" + URLEncoder.encode(email) + "&fname=" + URLEncoder.encode(fname) + "&group=" + URLEncoder.encode(group);
 
             URL url = new URL(serverURL);
