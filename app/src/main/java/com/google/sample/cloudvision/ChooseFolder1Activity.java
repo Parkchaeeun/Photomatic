@@ -405,7 +405,7 @@ public class ChooseFolder1Activity extends AppCompatActivity {
             String fname=  (String)params[1];
             String cate = (String)params[2];
             try{
-                String serverURL = "http://52.199.119.109/pm_site/album/app_photo.php";
+                String serverURL = "p";
                 String postParameters = "email=" + URLEncoder.encode(email) + "&fname=" + URLEncoder.encode(fname) + "&cate=" + URLEncoder.encode(cate);
 
                 URL url = new URL(serverURL);
@@ -442,7 +442,7 @@ public class ChooseFolder1Activity extends AppCompatActivity {
                 StringTokenizer st = new StringTokenizer(result);
                 while(st.hasMoreTokens()){
                     String pname=st.nextToken();
-                    URL url2=new URL("http://52.199.119.109/pm_site/album/user-album/"+email+"/"+cate+"/"+fname+"/"+pname);
+                    URL url2=new URL("");
                     HttpURLConnection con=(HttpURLConnection)url2.openConnection();
 
                     con.setReadTimeout(5000);
