@@ -14,7 +14,7 @@ import java.net.URL;
 public class Main2Activity extends AppCompatActivity {
 
     Button addFolder;
-    String serverURL = "http://52.199.119.109 /pm_site/album/add_folder.php";
+    String serverURL = "";
 
 
     @Override
