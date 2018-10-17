@@ -50,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:textColor="#ffffff"
-        android:layout_marginTop="370dp"
+        android:layout_marginTop="300dp"
         android:background="@drawable/buttonshape"
         android:text="메일 발송"
         android:id="@+id/btnFind"/>

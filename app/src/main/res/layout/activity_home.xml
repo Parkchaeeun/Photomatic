@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
     tools:context="com.google.sample.cloudvision.HomeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#00ff0000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photomatic"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textColor="#4a4a4a"
+            android:textSize="20sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_marginLeft="17dp"
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#6e6e6e"/>
 
     <ImageView
         android:layout_marginTop="40dp"
@@ -18,7 +41,7 @@
 
     <TextView
         android:textSize="20sp"
-        android:text=""
+        android:text="환영합니다"
         android:id="@+id/textUser"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
@@ -35,30 +58,52 @@
         android:text="앨범 보기"
         android:background="@drawable/buttonshape"
         android:id="@+id/btnSelectViewAlbum"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="60dp"
         android:layout_gravity="center"
-        android:layout_width="310dp"
+        android:layout_width="330dp"
         android:textColor="#ffffff"
         android:layout_height="60dp" />
 
     <Button
-        android:text="사진 불러오기"
-        android:background="@drawable/buttonshape2"
+        android:text="사진 분류하기"
+        android:visibility="gone"
+        android:background="@drawable/buttonshape3"
         android:id="@+id/btnBringPic"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:layout_width="310dp"
+        android:layout_width="330dp"
         android:textColor="#ffffff"
-        android:layout_height="60dp" />
+        android:layout_height="30dp" />
 
     <Button
         android:text="폴더 추가"
+        android:visibility="gone"
         android:background="@drawable/buttonshape4"
         android:id="@+id/btnAddFolder"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:layout_width="310dp"
+        android:layout_width="325dp"
         android:textColor="#ffffff"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/btnAmazonMain"
+        android:background="@drawable/buttonshape4"
+        android:text="사진 분류"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_width="325dp"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/btnSearchFace"
+        android:background="@drawable/buttonshape2"
+        android:text="인물 검색"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_width="330dp"
         android:layout_height="60dp" />
 
 </LinearLayout>

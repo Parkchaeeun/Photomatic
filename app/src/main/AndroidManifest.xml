@@ -2,15 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.google.sample.cloudvision">
 
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="signature" />
+
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/photomatic3"
+        android:label="Photomatic"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -37,18 +43,50 @@
         </provider>
 
         <activity android:name=".LoginActivity" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".JoinActivity" />
         <activity android:name=".FindActivity" />
-        <activity android:name=".SelectActivity" />
-        <activity android:name=".CreateActivity" />
+        <activity
+            android:name=".SelectActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".PopupActivity" />
-        <activity android:name=".CheckActivity" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".SelectFolderActivity" />
-        <activity android:name=".Main3Activity" />
+        <activity
+            android:name=".SelectFolderActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".FolderCheckActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".FolderViewActivity"></activity>
+        <activity
+            android:name=".FolderViewActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".AddFileActivity" />
+        <activity android:name=".FolderViewAnimalActivity" />
+        <activity android:name=".FolderViewProfileActivity" />
+        <activity android:name=".FolderViewWordActivity" />
+        <activity android:name=".FolderViewFoodActivity" />
+        <activity android:name=".FolderViewLandscapeActivity" />
+        <activity android:name=".FolderViewPictureActivity" />
+        <activity android:name=".ChooseFolder1Activity" />
+        <activity android:name=".AddFileChooseFolderActivity" />
+        <activity android:name=".SelectFolderAddFileAnimalActivity" />
+        <activity android:name=".SelectFolderAddFileHumanActivity" />
+        <activity android:name=".SelectFolderAddFileTextActivity" />
+        <activity android:name=".SelectFolderAddFileLandscapeActivity" />
+        <activity android:name=".SelelctFolderAddFileFoodActivity" />
+        <activity android:name=".SelectFolderAddFileArtActivity" />
+        <activity android:name=".FinalAddFileActivity" />
+        <activity android:name=".InnerAlbumActivity" />
+        <activity android:name=".TagActivity" />
+        <activity android:name=".SearchFaceActivity" />
+        <activity android:name=".SearchResultActivity" />
+        <activity android:name=".SearchTagActivity" />
+        <activity android:name=".AmazonActivity" />
+        <activity android:name=".SaveActivity" />
+        <activity android:name=".ResultClassifyActivity" />
+        <activity android:name=".AddTagActivity" />
+        <activity android:name=".ResultClassify_lands" />
+        <activity android:name=".ResultClassify_profile" />
+        <activity android:name=".Resultclassi_text" />
+        <activity android:name=".ResultClassify_food"></activity>
     </application>
 
 </manifest>

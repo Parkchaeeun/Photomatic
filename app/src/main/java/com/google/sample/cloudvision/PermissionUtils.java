@@ -24,6 +24,7 @@ import android.support.v4.content.ContextCompat;
 import java.util.ArrayList;
 
 public class PermissionUtils {
+
     public static boolean requestPermission(
             Activity activity, int requestCode, String... permissions) {
         boolean granted = true;

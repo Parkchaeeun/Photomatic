@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/loupe"
+        android:title="태그 검색"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+
+    <item android:id="@+id/menu_home"
+        android:title="홈"
+        android:icon="@drawable/home3"
+        app:showAsAction="always"
+        />
+
+    <item android:id="@+id/menu_logout"
+        android:icon="@drawable/logout"
+        android:title="로그아웃"
+        app:showAsAction="always"
+        />
+
+</menu>

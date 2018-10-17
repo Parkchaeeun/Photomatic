@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.google.sample.cloudvision.MainActivity">
+    android:fitsSystemWindows="true">
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,8 +17,6 @@
         android:textStyle="bold"
         android:textSize="40sp" />
 
-    <include
-        layout="@layout/content_main" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,19 +25,13 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/fab"
-            android:layout_width="207dp"
+            android:id="@+id/getFileBtn"
+            android:layout_width="match_parent"
             android:layout_height="70dp"
             android:text="사진 불러오기"
             android:textColor="#ffffff"
             android:background="@drawable/buttonshape" />
 
-        <Button
-            android:text="분류기준 선택"
-            android:id="@+id/fab2"
-            android:textColor="#ffffff"
-            android:background="@drawable/buttonshape"
-            android:layout_width="207dp"
-            android:layout_height="70dp" />
     </LinearLayout>
+
 </android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.google.sample.cloudvision.ChooseFolder1Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#00ff0000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="폴더"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textColor="#4a4a4a"
+            android:textSize="20sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_marginLeft="17dp"
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#6e6e6e"/>
+
+        <ScrollView
+            android:layout_marginLeft="5dp"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="582dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/iv_folder1_1"
+                        android:scaleType="fitXY"
+                     />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/iv_folder1_2"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/iv_folder1_3"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/iv_folder1_4"
+                        />
+                 </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/iv_folder1_5"
+                    />
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/iv_folder1_6"
+                    />
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/iv_folder1_7"
+                    />
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/iv_folder1_8"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:scaleType="fitXY"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/iv_folder1_9"
+                    />
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/iv_folder1_10"
+                    />
+
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/iv_folder1_11"
+                    />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/iv_folder1_12"
+                    />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/iv_folder1_13"
+                        />
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/iv_folder1_14"
+                        />
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/iv_folder1_15"
+                        />
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/iv_folder1_16"
+                        />
+                </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+    <Button
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonshape"
+            android:text="사진 추가하기"
+            android:id="@+id/addImage"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+    </LinearLayout>
+
+
+

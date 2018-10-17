@@ -2,8 +2,10 @@ package com.google.sample.cloudvision;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 //import android.support.v7.app.AppCompatActivity;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -43,16 +45,13 @@ public class LoginActivity extends Activity {
    TextView tx,tx3;
    String email,pw;
    Button btnLogin;
-    String cookieString;
-    Boolean m_session=false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        //Intent intent=getIntent();
-        //name=intent.getStringExtra("name");
 
         l_email=(EditText)findViewById(R.id.loginEmail);
         l_pw=(EditText)findViewById(R.id.loginPw);
@@ -107,14 +106,6 @@ public class LoginActivity extends Activity {
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
 
-                cookieString = CookieManager.getInstance().getCookie("http://52.199.119.109/pm_site/");
-                if (cookieString != null) {
-                    //쿠키를 새로운 연결에 실어보낸다.
-                    httpURLConnection.setRequestProperty("Cookie", cookieString);
-                }
-
-                //httpURLConnection.connect();
-                saveCookie(httpURLConnection);
 
                 String postData = "email="+ URLEncoder.encode(email) + "&pw=" + URLEncoder.encode(pw);
                 OutputStream outputStream = httpURLConnection.getOutputStream();
@@ -139,9 +130,14 @@ public class LoginActivity extends Activity {
                     {
                         if(result.equals("SUCCESS"))
                         {
+                            SharedPreferences pref=getSharedPreferences("pref", Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor=pref.edit();
+                            editor.putString("email",email);
+                            editor.apply();
+
+
                             Intent intent=new Intent(getApplicationContext(),HomeActivity.class);
-                            //intent.putExtra("email",email);
-                            //intent.putExtra("name",name);
+                
                             startActivity(intent);
                             finish();
                         }
@@ -167,20 +163,6 @@ public class LoginActivity extends Activity {
                 e.printStackTrace();
             }
         }
-
-        public void saveCookie( HttpURLConnection conn)
-        {
-            Map<String, List<String>> imap = conn.getHeaderFields(); //쿠키 데이터 보관
-            if(imap.containsKey("Set-Cookie"))
-            {
-                List<String> lString = imap.get("Set-Cookie");
-                for(int i = 0;i<lString.size();i++){cookieString += lString.get(i);}
-                Log.e("zdg",cookieString);
-                m_session = true ;
-            } else {
-                m_session = false ;
-            }
-        }
     }
 
     String loginResult(InputStream is)
@@ -191,9 +173,4 @@ public class LoginActivity extends Activity {
         s.close();
         return data;
     }
-
-
-
-
-
 }

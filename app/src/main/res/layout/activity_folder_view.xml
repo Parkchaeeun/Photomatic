@@ -1,55 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
     tools:context="com.google.sample.cloudvision.FolderViewActivity">
 
-    <TextView
-        android:id="@+id/tvFolderName"
-        android:textColor="#4a4a4a"
-        android:layout_marginTop="50dp"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:text="Animal"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <Button
+            android:drawableRight="@drawable/arrow"
+            android:paddingLeft="20dp"
+            android:id="@+id/btn_anim"
+            android:text="동물"
+            android:background="@drawable/buttonshape"
+            android:drawableLeft="@drawable/animal_btn"
+            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.04"
+            android:textSize="25dp"
+            />
 
-        <ImageView
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/dog"
-            android:layout_width="140dp"
-            android:layout_height="140dp" />
+        <Button
+            android:paddingLeft="20dp"
+            android:drawableRight="@drawable/arrow"
+            android:id="@+id/btn_lands"
+            android:text="풍경"
+            android:background="@drawable/buttonshape2"
+            android:drawableLeft="@drawable/landscape"
+            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.04"
+            android:textSize="25dp"
+            />
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="67dp"
-        android:text="DSanimal"
-        android:textSize="20dp"
-        android:id="@+id/tvFolderName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <Button
+            android:paddingLeft="20dp"
+            android:drawableRight="@drawable/arrow"
+            android:id="@+id/btn_prof"
+            android:text="인물"
+            android:background="@drawable/buttonshape3"
+            android:drawableLeft="@drawable/profile_btn"
+            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.04"
+            android:textSize="25dp"
+            />
 
+        <Button
+            android:paddingLeft="20dp"
+            android:drawableRight="@drawable/arrow"
+            android:id="@+id/btn_wor"
+            android:text="문자"
+            android:background="@drawable/buttonshape4"
+            android:drawableLeft="@drawable/word"
+            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.04"
+            android:textSize="25dp"
+            />
 
-    <Button
-        android:paddingLeft="10dp"
-        android:layout_marginTop="250dp"
-        android:paddingTop="10dp"
-        android:drawableLeft="@drawable/add"
-        android:textColor="#ffffff"
-        android:textSize="15sp"
-        android:background="@drawable/buttonshape"
-        android:layout_marginLeft="20dp"
-        android:text="폴더 추가하기"
-        android:layout_width="360dp"
-        android:layout_height="80dp" />
+        <Button
+            android:paddingLeft="20dp"
+            android:drawableRight="@drawable/arrow"
+            android:id="@+id/btn_foo"
+            android:text="음식"
+            android:background="@drawable/buttonshape5"
+            android:drawableLeft="@drawable/food_btn"
+            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.04"
+            android:textSize="25dp"
+            />
 
-
-
-</LinearLayout>
+        <Button
+            android:paddingLeft="20dp"
+            android:drawableRight="@drawable/arrow"
+            android:id="@+id/btn_pict"
+            android:text="그림"
+            android:background="@drawable/buttonshape6"
+            android:drawableLeft="@drawable/picture_btn"
+            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.04"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+</ScrollView>

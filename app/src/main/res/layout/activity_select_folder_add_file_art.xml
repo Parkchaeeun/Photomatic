@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="2"
+    tools:context="com.google.sample.cloudvision.SelectFolderAddFileArtActivity">
+
+    <Button
+        android:background="#00ff0000"
+        android:paddingTop="30dp"
+        android:text=""
+        android:visibility="gone"
+        android:drawableTop="@drawable/f_picture_1"
+        android:id="@+id/selectFolderArt_1"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <Button
+        android:background="#00ff0000"
+        android:paddingTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text=""
+        android:visibility="gone"
+        android:drawableTop="@drawable/f_picture_1"
+        android:id="@+id/selectFolderArt_2"
+        />
+
+    <Button
+        android:background="#00ff0000"
+        android:paddingTop="30dp"
+        android:text=""
+        android:visibility="gone"
+        android:drawableTop="@drawable/f_picture_1"
+        android:id="@+id/selectFolderArt_3"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <Button
+        android:background="#00ff0000"
+        android:paddingTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text=""
+        android:visibility="gone"
+        android:drawableTop="@drawable/f_picture_1"
+        android:id="@+id/selectFolderArt_4"
+        />
+
+    <Button
+        android:background="#00ff0000"
+        android:paddingTop="30dp"
+        android:text=""
+        android:visibility="gone"
+        android:drawableTop="@drawable/f_picture_1"
+        android:id="@+id/selectFolderArt_5"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <Button
+        android:background="#00ff0000"
+        android:paddingTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text=""
+        android:visibility="gone"
+        android:drawableTop="@drawable/f_picture_1"
+        android:id="@+id/selectFolderArt_6"
+        />
+
+</GridLayout>

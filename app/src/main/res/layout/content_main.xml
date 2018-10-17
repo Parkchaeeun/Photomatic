@@ -32,11 +32,73 @@
                 android:layout_marginBottom="8dp"
                 android:text="하단의 버튼을 이용하여 분류할 사진을 불러오세요."/>
 
-            <ImageView
-                android:id="@+id/main_image"
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:scaleType="fitCenter"/>
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/main_image"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"/>
+
+                        <ImageView
+                            android:id="@+id/main_image2"
+                            android:layout_width="180dp"
+                            android:layout_height="200dp"
+                            android:scaleType="fitCenter"/>
+
+                        <ImageView
+                            android:id="@+id/main_image3"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/main_image4"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"/>
+
+
+                        <ImageView
+                            android:id="@+id/main_image5"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"/>
+
+                        <ImageView
+                            android:id="@+id/main_image6"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
